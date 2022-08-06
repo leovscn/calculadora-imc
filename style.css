@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-body{
-  display: flex;
+body {
+  display: grid;
   justify-content: center;
   margin: 0;
   background-color: black;
   box-sizing: border-box;
   font-family: 'Oswald', regular;
 }
-.container{
+
+.text {
+  display: inline;
+  color: aliceblue;
+}
+
+.text p {
+  text-align: center;
+}
+
+.container {
+  margin-top: 10%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: flex-end;
   padding: 2em;
-  background: linear-gradient(rgb(184, 235, 179) , rgb(78, 153, 158)), no-repeat;
+  background: linear-gradient(rgb(184, 235, 179), rgb(78, 153, 158)), no-repeat;
   border-radius: 1em;
 }
 
-div .kgs{
-  display:inline-flex;
-  align-items:center;
+div .kgs {
+  display: inline-flex;
+  align-items: center;
   justify-content: space-between;
 }
-input{
-    width: 50%;
+
+input {
+  width: 50%;
 }
-button{
+
+button {
   background-color: rgb(48, 49, 49);
   padding: 0.5em 2em;
   border: none;
@@ -36,10 +49,24 @@ button{
   color: azure;
   margin: 1em;
 }
-button:hover{
+
+button:hover {
   background-color: rgb(243, 250, 242);
   color: black;
 }
-h3{
+
+h3 {
   margin: 0.5em;
+}
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+i {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
 }
